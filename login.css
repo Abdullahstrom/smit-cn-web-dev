@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    gap: 35px;
+    background-color:#0070BB;
+}
+#h1{
+    margin-bottom: 35px;
+}
+
+#gohome{
+        
+    width:70px ;
+    height: 30px;
+    background-color:#4169E1;
+    border: 1px solid black;
+    margin-left: 370px;
+margin-top: -70px;
+    }
+input{
+    height: 30px;
+    width: 250px;
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color:#0070BB;
+        display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+
+}
+#papa{
+    margin-top: 20px;
+        display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content:center;
+    align-items:center;
+
+}
+#pappa input{
+    width: 100px}
+
+    #gohome{
+    width:70px ;
+    height: 30px;
+    background-color:#4169E1;
+    border: 1px solid black;
+    margin-left: 360px;
+margin-top: -70px;
+    }
+    input{
+    height: 30px;
+    width: 250px;
+}
