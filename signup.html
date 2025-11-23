@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,43 @@
     <h1 style="width: 100vw;height: 50px;">SIGNUP SECTION</h1>
     </div>
     <div id="papa">
-    <input placeholder="UserName" type="text">
-    <input placeholder="FirstName" type="text">
-    <input placeholder="LastName" type="text">
+    <input id="username" placeholder="UserName" type="text">
+    <input id="fname" placeholder="FirstName" type="text">
+    <input id="lname" placeholder="LastName" type="text">
     <input placeholder="E-Mail" type="email">
-    <input placeholder="Password" type="password">
-    <input placeholder="ConfirmPassword" type="password">
+    <input id="pass" placeholder="Password" type="password">
+    <input id="cpass" placeholder="ConfirmPassword" type="password">
     </div>
     <p style=" margin-top: 30px;"> Already have an Account? <a href="login.html">LOGIN</a></p>
+
+
 <button id="gohome" onclick="goToHome()">Signup</button>
 
 <script>
-function goToHome() {
-    location.href = "index.html";   
+function goToHome(){
+    let username = document.querySelector("#username").value;
+    let fname = document.querySelector("#fname").value;
+    let lname = document.querySelector("#lname").value;
+    let pass = document.querySelector("#pass").value;
+    let cpass = document.querySelector("#cpass").value;
+
+
+    if(username.length <= 3 || fname.length <= 3 || lname.length <= 3){
+        alert("All names and username must be more than 3 characters");
+        return;
+    }
+
+    
+    if(pass !== cpass){
+        alert("Passwords do not match!");
+        return;
+    }
+
+    localStorage.setItem("username", username);
+
+    window.location.href = "index.html";
 }
 </script>
+
 </body>
 </html>

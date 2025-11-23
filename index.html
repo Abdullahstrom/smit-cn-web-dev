@@ -9,10 +9,16 @@
 <link rel="stylesheet" href="style.css">
 <body>
     
+        <h1 id="welcome"></h1>
+    
+<select id="sortSelect">
+    <option value="newest">Newest First</option>
+    <option value="oldest">Oldest First</option>
+</select>
 
 <input placeholder="Search any Post" id="filter" type="text">
 
-<button style="position: sticky;" id="postbtn" onclick="posthandler()">Post</button>
+<button style="position: sticky;" id="postbtn" onclick="posthandler()">Create a Post</button>
 <div   id="postsdad"></div>
 <div id="postinputar">
     <h1> About your post</h1>
